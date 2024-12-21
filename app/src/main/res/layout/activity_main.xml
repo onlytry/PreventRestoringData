@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/startEraseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始擦除" />
+
+    <Button
+        android:id="@+id/pauseResumeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停擦除"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止擦除"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/cleanupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清理文件"
+        android:layout_marginTop="8dp" />
+
+    <ProgressBar
+        android:id="@+id/eraseProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/fileListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="monospace" />
+
+    </ScrollView>
+
+</LinearLayout>
